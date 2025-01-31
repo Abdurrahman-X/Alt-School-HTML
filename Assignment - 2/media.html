@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Media Page</title>
+</head>
+<body>
+    <h1>Abdurrahman Abolaji - Multimedia Experience</h1>
+
+    <section>
+        <h2>My Profile Picture</h2>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="/api/placeholder/800/600">
+            <source media="(min-width: 768px)" srcset="/api/placeholder/600/400">
+            <source media="(min-width: 320px)" srcset="/api/placeholder/400/300">
+            <img src="/api/placeholder/400/300" alt="My Profile Picture">
+        </picture>
+    </section>
+
+    <section>
+        <h2>Introduction Video</h2>
+        <video width="320" height="240" controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>My Favorite Music</h2>
+        <audio controls>
+            <source src="your-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h2>My Location</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=your-map-embed-code" 
+            width="600" 
+            height="450" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <p><a href="table.html">Back to Table Page</a></p>
+</body>
+</html>
